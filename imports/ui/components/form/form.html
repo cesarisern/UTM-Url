@@ -1,0 +1,22 @@
+<template name="form">
+  <h2>New UTM url</h2>
+
+  {{> loginButtons}}
+  <ul>
+    <li>
+      <form class="info-link-add">
+        <li><input type="url" name="WebsiteURL" placeholder="Website URL" required></li>
+        <li><input type="text" name="Source" placeholder="Campaign Source" ></li>
+        <li><input type="text" name="Medium" placeholder="Campaign Medium" ></li>
+        <li><input type="text" name="Name" placeholder="Campaign Name" ></li>
+        <li><input type="text" name="Term" placeholder="Campaign Term" ></li>
+        <li><input type="text" name="Content" placeholder="Campaign Content" ></li>
+        <input type="submit" name="submit" value="Save new URL">
+      </form>
+    </li>
+
+    {{#each links}}
+      <li><a href="{{url}}" target="_blank">{{UTMUrl}}</a></li>
+    {{/each}}
+  </ul>
+</template>

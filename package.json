@@ -1,0 +1,16 @@
+{
+  "name": "Test-scafflold",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.46",
+    "bcrypt": "^2.0.1",
+    "meteor-node-stubs": "^0.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
