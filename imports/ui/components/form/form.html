@@ -2,18 +2,21 @@
   <h2>New UTM url</h2>
 
   {{> loginButtons}}
-  <ul>
-    <li>
-      <form class="info-link-add">
-        <li><input type="url" name="WebsiteURL" placeholder="Website URL" required></li>
-        <li><input type="text" name="Source" placeholder="Campaign Source" ></li>
-        <li><input type="text" name="Medium" placeholder="Campaign Medium" ></li>
-        <li><input type="text" name="Name" placeholder="Campaign Name" ></li>
-        <li><input type="text" name="Term" placeholder="Campaign Term" ></li>
-        <li><input type="text" name="Content" placeholder="Campaign Content" ></li>
-        <input type="submit" name="submit" value="Save new URL">
-      </form>
-    </li>
 
-  </ul>
+  <div class="grid-container" >
+
+
+      <form class="grid-x info-link-add">
+        <input type="url" class="pt-input cell" name="WebsiteURL" placeholder="Website URL" required>
+        <input type="text" class="pt-input cell" name="Source" placeholder="Campaign Source" >
+        <input type="text" class="pt-input cell" name="Medium" placeholder="Campaign Medium" >
+        <input type="text" class="pt-input cell" name="Name" placeholder="Campaign Name" >
+        <input type="text" class="pt-input cell" name="Term" placeholder="Campaign Term" >
+        <input type="text" class="pt-input cell" name="Content" placeholder="Campaign Content" >
+        <button type="submit" name="submit" class="pt-button cell" value="">Save new URL</button>
+      </form>
+
+
+  </div>
+
 </template>
