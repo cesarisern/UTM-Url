@@ -2,19 +2,21 @@
   <h2>New UTM url</h2>
 
   {{> loginButtons}}
-  <ul>
-    <li>
-      <form class="info-link-add">
-        <li><input type="url" class="pt-input" name="WebsiteURL" placeholder="Website URL" required></li>
-        <li><input type="text" class="pt-input" name="Source" placeholder="Campaign Source" ></li>
-        <li><input type="text" class="pt-input" name="Medium" placeholder="Campaign Medium" ></li>
-        <li><input type="text" class="pt-input" name="Name" placeholder="Campaign Name" ></li>
-        <li><input type="text" class="pt-input" name="Term" placeholder="Campaign Term" ></li>
-        <li><input type="text" class="pt-input" name="Content" placeholder="Campaign Content" ></li>
-        <button type="submit" name="submit" class="pt-button" value="">Save new URL</button>
-      </form>
-      <!-- <button type="button" class="pt-button pt-icon-add .modifier" :modifier>Button</button> -->
-    </li>
 
-  </ul>
+  <div class="grid-container" >
+
+
+      <form class="grid-x info-link-add">
+        <input type="url" class="pt-input cell" name="WebsiteURL" placeholder="Website URL" required>
+        <input type="text" class="pt-input cell" name="Source" placeholder="Campaign Source" >
+        <input type="text" class="pt-input cell" name="Medium" placeholder="Campaign Medium" >
+        <input type="text" class="pt-input cell" name="Name" placeholder="Campaign Name" >
+        <input type="text" class="pt-input cell" name="Term" placeholder="Campaign Term" >
+        <input type="text" class="pt-input cell" name="Content" placeholder="Campaign Content" >
+        <button type="submit" name="submit" class="pt-button cell" value="">Save new URL</button>
+      </form>
+
+
+  </div>
+
 </template>
