@@ -4,6 +4,9 @@ import './list.html';
 
 Template.list.onCreated(function () {
   Meteor.subscribe('links.all');
+
+
+
 });
 
 Template.list.helpers({
