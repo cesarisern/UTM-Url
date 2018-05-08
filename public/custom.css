@@ -2,18 +2,112 @@ body {
   background-color: #293742 !important;
 }
 
+.Logo {
+  font-size: 72px;
+  color: #F7F41B;
+  float: right;
+  margin-top: 49px;
+  margin-right: -3px;
+  font-weight: bold;
+}
+
+.Domain {
+  color: white;
+  float: right;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 144px;
+  margin-bottom: 40px;
+  margin-right: -224px;
+}
+
 .Left-menu {
   background-color: #394B59;
   height: 100%;
   width: 500px;
 
-  position: absolute;
+  float: right;
+
+  position: fixed;
   left: 0px;
   top: 0px;
 }
 
-.custom-column {
-  background-color: #293742;
+.Landing-URL {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 145px;
+  margin-bottom: 40px;
+}
+
+.Landing-lists {
+  margin-left: 500px;
+  width: 1800px;
+}
+
+.List-column {
+  float: left;
+  margin-left: 15px;
+}
+
+.List-container {
   width: 283px;
+  margin-top: 312px;
+}
+
+.New-URL-Button {
+  margin-bottom: 40px;
+}
+
+.custom-column {
+  margin-top: 40px;
+  width: 263px;
   height: 100%;
+}
+
+.Column-header {
+  position: fixed;
+  background-color:#293742;
+  width: 263px;
+}
+
+.Custom-list {
+
+}
+
+.UTM-Links {
+  background-color: #2E414E;
+  resize: none;
+  border: none;
+  padding: 10px;
+  color: #CED9E0;
+  overflow: hidden;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.UTM-Links:hover {
+  color: #D1F26D;
+}
+
+.Click-copy {
+  font-size: 12px;
+  margin-top: 5px;
+
+}
+
+.Click-copy:hover {
+  color: #D1F26D;
+  visibility: visible;
+}
+
+/*Form:*/
+
+.form-cointainer {
+  width: 330px;
+  background-color: #394B59;
 }

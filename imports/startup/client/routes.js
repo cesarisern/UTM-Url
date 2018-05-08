@@ -9,6 +9,7 @@ import {
 import '../../ui/pages/login/login.js';
 import '../../ui/layouts/body/body.js';
 import '../../ui/pages/home/home.js';
+import '../../ui/pages/component-test/home.js';
 import '../../ui/pages/not-found/not-found.js';
 
 //Login callbacks
@@ -45,6 +46,15 @@ FlowRouter.route('/app', {
   action() {
     BlazeLayout.render('App_body', {
       main: 'App_home'
+    });
+  },
+});
+
+FlowRouter.route('/test', {
+  name: 'App.home',
+  action() {
+    BlazeLayout.render('App_body', {
+      main: 'App_test'
     });
   },
 });

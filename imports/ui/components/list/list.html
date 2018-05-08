@@ -1,9 +1,24 @@
 <template name="list">
-  <div class="grid-y custom-column">
-    {{#each links}}
-    <div class="cell" >
-      <textarea class="pt-input" :disabled dir="auto">{{UTMUrl}}</textarea>
+
+    <div class="Column-header">
+      <div class="Landing-URL">/landing-page</div>
+      <button class="pt-button New-URL-Button" >New URL</button>
     </div>
-    {{/each}}
+
+    <div class="List-container">
+
+    <div class="grid-margin-y custom-column">
+
+      <div class="Custom-list">
+        {{#each links}}
+          <div class="cell small-4" >
+            <div class="UTM-Links" dir="auto">{{UTMUrl}}</div>
+            <div class="Click-copy" >Clcik to copy</div>
+          </div>
+        {{/each}}
+      </div>
+
+    </div>
   </div>
+
 </template>
