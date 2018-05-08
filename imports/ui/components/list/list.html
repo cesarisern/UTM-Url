@@ -1,9 +1,9 @@
 <template name="list">
-  <h2>This is the list</h2>
-
-  <ul>
+  <div class="grid-y custom-column">
     {{#each links}}
-      <li><a href="{{url}}" target="_blank">{{UTMUrl}}</a></li>
+    <div class="cell" >
+      <textarea class="pt-input" :disabled dir="auto">{{UTMUrl}}</textarea>
+    </div>
     {{/each}}
-  </ul>
+  </div>
 </template>

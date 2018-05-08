@@ -1,0 +1,19 @@
+body {
+  background-color: #293742 !important;
+}
+
+.Left-menu {
+  background-color: #394B59;
+  height: 100%;
+  width: 500px;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.custom-column {
+  background-color: #293742;
+  width: 283px;
+  height: 100%;
+}
