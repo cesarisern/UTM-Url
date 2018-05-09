@@ -4,9 +4,6 @@ import './list.html';
 
 Template.list.onCreated(function () {
   Meteor.subscribe('links.all');
-
-
-
 });
 
 Template.list.helpers({
@@ -15,4 +12,11 @@ Template.list.helpers({
       return Links.find({owner: Meteor.userId() });
     }
   },
+});
+
+Template.list.events({
+  "click .New-URL-Button":function(event, template){
+    var simpleInput = window.find('.form-cointainer');
+    simpleInput.style.visibility = 'visible';
+  }
 });

@@ -42,4 +42,11 @@ Template.form.events({
       }
     });
   },
+
+  "click .pt-minimal":function(event, template){
+    var simpleInput = template.find('.form-cointainer');
+
+    simpleInput.style.visibility = Session.get('Form-visibility');
+    console.log("Hello! "+Session.get('Hello-text'));
+  }
 });
