@@ -1,12 +1,23 @@
 import { Links } from '/imports/api/links/links.js';
 import { Meteor } from 'meteor/meteor';
+import { Session } from 'meteor/session'
 import './form.html';
 
+Template.form.onCreated(
+  function () {
+    Meteor.subscribe('links.all');
+  },
+);
 
-
-Template.form.onCreated(function () {
-  Meteor.subscribe('links.all');
-});
+Template.form.onRendered(
+  function () {
+    this.autorun(function(){
+      console.log("onRendered:"+Session.get('Form-visibility'));
+      const Formcontainer = this.find('.form-cointainer');
+      Formcontainer.style.visibility = Session.get('Form-visibility');
+    }.bind(this));
+  },
+);
 
 Template.form.helpers({
   links() {
@@ -43,10 +54,7 @@ Template.form.events({
     });
   },
 
-  "click .pt-minimal":function(event, template){
-    var simpleInput = template.find('.form-cointainer');
-
-    simpleInput.style.visibility = Session.get('Form-visibility');
-    console.log("Hello! "+Session.get('Hello-text'));
+  'click .Cancel-form-button'(event, template){
+    Session.set('Form-visibility','hidden');
   }
 });
