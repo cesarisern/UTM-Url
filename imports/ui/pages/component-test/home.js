@@ -1,3 +1,3 @@
 import './home-test.html';
 
-import '../../components/list/list.js';
+import '../../components/New-landing/New-landing.js';

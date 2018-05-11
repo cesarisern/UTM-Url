@@ -1,9 +1,5 @@
-import {
-  FlowRouter
-} from 'meteor/kadira:flow-router';
-import {
-  BlazeLayout
-} from 'meteor/kadira:blaze-layout';
+import {FlowRouter} from 'meteor/kadira:flow-router';
+import {BlazeLayout} from 'meteor/kadira:blaze-layout';
 
 // Import needed templates
 import '../../ui/pages/login/login.js';
