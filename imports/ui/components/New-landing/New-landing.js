@@ -10,12 +10,6 @@ Template.Newlanding.onCreated(
   },
 );
 
-// Template.form.helpers({
-//   links() {
-//     return Links.find({});
-//   },
-// });
-//
 Template.Newlanding.events({
   'submit .Landingpage-add'(event) {
     event.preventDefault();
