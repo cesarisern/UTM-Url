@@ -1,3 +1,5 @@
+/*General*/
+
 body {
   background-color: #293742 !important;
 }
@@ -114,4 +116,9 @@ body {
   margin-left: -15px;
   padding: 15px;
   background-color: #394B59;
+}
+
+.info-link-add :first-child {
+  display: none;
+
 }
