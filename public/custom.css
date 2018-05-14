@@ -69,7 +69,7 @@ body {
 }
 
 .Column-header {
-  position: fixed;
+  position: relative;
   background-color:#293742;
   width: 263px;
 }
