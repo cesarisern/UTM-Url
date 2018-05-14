@@ -1,0 +1,13 @@
+<template name="Listgroup">
+
+  <div class="Landing-lists" >
+        {{#each landingpages}}
+          <div class="List-column">
+            {{> form WebsiteURL=Landingpage}}
+            {{> list Landingpath=Landingpage}}
+          </div>
+        {{/each}}
+
+  </div>
+
+</template>

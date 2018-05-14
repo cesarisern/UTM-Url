@@ -26,3 +26,5 @@ johanbrook:publication-collector  # Test a Meteor publication by collecting its 
 accounts-ui
 accounts-password
 gwendall:auth-client-callbacks
+fourseven:scss
+session
