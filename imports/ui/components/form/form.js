@@ -12,9 +12,18 @@ Template.form.onCreated(
 Template.form.onRendered(
   function () {
     this.autorun(function(){
-      console.log("onRendered:"+Session.get('Form-visibility'));
+      const amIactive = this.find('.WebsiteURL').value;
       const Formcontainer = this.find('.form-cointainer');
-      Formcontainer.style.visibility = Session.get('Form-visibility');
+      console.log("onRendered:"+Session.get('Form-active'));
+      console.log("onRendered2 :"+amIactive);
+        if (amIactive == Session.get('Form-active')){
+          console.log("If is true!");
+          Formcontainer.style.visibility = 'visible';
+        } else {
+          console.log("If is false!");
+          Formcontainer.style.visibility = 'hidden';
+        }
+      // Formcontainer.style.visibility = Session.get('Form-visibility');
     }.bind(this));
   },
 );
@@ -55,6 +64,6 @@ Template.form.events({
   },
 
   'click .Cancel-form-button'(event, template){
-    Session.set('Form-visibility','hidden');
+    Session.set('Form-active','None');
   }
 });
