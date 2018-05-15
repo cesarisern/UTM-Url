@@ -37,7 +37,7 @@ Meteor.methods({
       if (Term) {Term="/utm_source="+Term};
       if (Content) {Content="/utm_source="+Content};
 
-      UTMUrl = "Function works!"+Site+WebsiteURL+Source+Medium+Name+Term+Content;
+      UTMUrl = Site+WebsiteURL+Source+Medium+Name+Term+Content;
 
       return UTMUrl;
 

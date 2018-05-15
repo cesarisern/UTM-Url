@@ -80,6 +80,10 @@ body {
 }
 
 .UTM-Links {
+  margin-bottom: 20px;
+}
+
+.UTM-Link {
   background-color: #2E414E;
   resize: none;
   border: none;
@@ -93,7 +97,7 @@ body {
   user-select: none;
 }
 
-.UTM-Links:hover {
+.UTM-Link:hover {
   color: #D1F26D;
 }
 
