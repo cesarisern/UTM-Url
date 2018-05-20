@@ -6,3 +6,5 @@ FocusStyleManager.onlyShowFocusOnTabs();
 
 Session.set('Form-active','None');
 Session.set('Form-visibility','hidden');
+
+Session.set('Site','http://www.joinlucid.com');

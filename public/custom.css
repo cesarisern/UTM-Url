@@ -29,6 +29,7 @@ body {
   width: 500px;
 
   float: right;
+  z-index: 10;
 
   position: fixed;
   left: 0px;
@@ -39,7 +40,7 @@ body {
   color: white;
   font-size: 26px;
   font-weight: 600;
-  margin-top: 145px;
+  margin-top: -39px;
   margin-bottom: 40px;
 }
 
@@ -55,7 +56,7 @@ body {
 
 .List-container {
   width: 283px;
-  margin-top: 312px;
+  margin-top: 10px;
 }
 
 .New-URL-Button {
@@ -69,7 +70,7 @@ body {
 }
 
 .Column-header {
-  position: fixed;
+  position: relative;
   background-color:#293742;
   width: 263px;
 }
@@ -79,11 +80,16 @@ body {
 }
 
 .UTM-Links {
+  margin-bottom: 20px;
+  color: #CED9E0;
+}
+
+.UTM-Link {
   background-color: #2E414E;
   resize: none;
   border: none;
   padding: 10px;
-  color: #CED9E0;
+  font-size: 11px;
   overflow: hidden;
 
   -webkit-user-select: none;
@@ -93,11 +99,11 @@ body {
 }
 
 .UTM-Links:hover {
-  color: #D1F26D;
+  color: #D1F26D !important;
 }
 
 .Click-copy {
-  font-size: 12px;
+  font-size: 11px;
   margin-top: 5px;
 
 }
@@ -110,7 +116,7 @@ body {
 /*Form:*/
 
 .form-cointainer {
-  position: fixed;
+  position: relative;
   z-index: 2;
   width: 293px;
   margin-left: -15px;
