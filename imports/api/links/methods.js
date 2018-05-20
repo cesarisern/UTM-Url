@@ -24,6 +24,7 @@ Meteor.methods({
       Term,
       Content,
       UTMUrl,
+      UTMUrldisplay,
       createdAt: new Date(),
       owner: Meteor.userId(),           // _id of logged in user
     });
@@ -32,14 +33,16 @@ Meteor.methods({
       const Site = 'http://www.joinlucid.com';
 
       if (Source) {Source="/utm_source="+Source};
-      if (Medium) {Medium="/utm_source="+Medium};
-      if (Name) {Name="/utm_source="+Name};
-      if (Term) {Term="/utm_source="+Term};
-      if (Content) {Content="/utm_source="+Content};
+      if (Medium) {Medium="/utm_medium="+Medium};
+      if (Name) {Name="/utm_name="+Name};
+      if (Term) {Term="/utm_term="+Term};
+      if (Content) {Content="/utm_content="+Content};
 
       UTMUrl = Site+WebsiteURL+Source+Medium+Name+Term+Content;
+      UTMUrldisplay = Site+WebsiteURL+"\n"+Source+"\n"+Medium+"\n"+Name+"\n"+Term+"\n"+Content;
 
       return UTMUrl;
+      return UTMUrldisplay;
 
     };
 

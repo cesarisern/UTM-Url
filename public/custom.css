@@ -81,6 +81,7 @@ body {
 
 .UTM-Links {
   margin-bottom: 20px;
+  color: #CED9E0;
 }
 
 .UTM-Link {
@@ -88,7 +89,7 @@ body {
   resize: none;
   border: none;
   padding: 10px;
-  color: #CED9E0;
+  font-size: 11px;
   overflow: hidden;
 
   -webkit-user-select: none;
@@ -97,12 +98,12 @@ body {
   user-select: none;
 }
 
-.UTM-Link:hover {
-  color: #D1F26D;
+.UTM-Links:hover {
+  color: #D1F26D !important;
 }
 
 .Click-copy {
-  font-size: 12px;
+  font-size: 11px;
   margin-top: 5px;
 
 }
