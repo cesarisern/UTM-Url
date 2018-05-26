@@ -40,7 +40,7 @@ body {
   color: white;
   font-size: 26px;
   font-weight: 600;
-  margin-top: -213px;
+  /*margin-top: -213px;*/
   margin-bottom: 40px;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .List-container {
   width: 283px;
-  margin-top: 10px;
+  margin-top: 302px;
 }
 
 .New-URL-Button {
@@ -70,9 +70,10 @@ body {
 }
 
 .Column-header {
-  position: relative;
+  position: absolute;
   background-color:#293742;
   width: 263px;
+  margin-top: 144px;
 }
 
 .Custom-list {
@@ -119,13 +120,39 @@ body {
   font-weight: 600;
   background-color: #293742;
   border: none;
+  box-shadow: none;
+  box-decoration-break: none;
+  padding-left: 0px;
+
+}
+
+.new-landing {
+  margin-top: 143px;
+  width: 263px;
+}
+
+#new-landing-form::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #394B59;
+}
+#new-landing-form::-moz-placeholder { /* Firefox 19+ */
+  color: #394B59;
+}
+#new-landing-form:-ms-input-placeholder { /* IE 10+ */
+  color: #394B59;
+}
+#new-landing-form:-moz-placeholder { /* Firefox 18- */
+  color: #394B59;
+}
+
+.Landingpage-add .pt-button {
+  margin-top: 18px;
 }
 
 /*Form:*/
 
 .form-cointainer {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  z-index: 10;
   width: 293px;
   margin-left: -15px;
   padding: 15px;
