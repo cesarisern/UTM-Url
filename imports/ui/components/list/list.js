@@ -41,30 +41,8 @@ Template.list.events({
   },
 
   "click .UTM-Links": function(event, template) {
-    var CopyURL = Template.instance().find('.UTM-Link');
-    var range = document.createRange();
-    range.selectNodeContents(CopyURL);
-    selection.removeAllRanges();          // Remove all ranges from the selection.
-    selection.addRange(range);
-    document.execCommand('copy');
-    console.log("Clicked: " + range);
-
-
-
+    console.log(this);
+    new ClipboardJS('.UTM-Link');
   },
-
-  // function myFunction() {
-  //   /* Get the text field */
-  //   var copyText = document.getElementById("myInput");
-  //
-  //   /* Select the text field */
-  //   copyText.select();
-  //
-  //   /* Copy the text inside the text field */
-  //   document.execCommand("copy");
-  //
-  //   /* Alert the copied text */
-  //   alert("Copied the text: " + copyText.value);
-  // }
 
 });
