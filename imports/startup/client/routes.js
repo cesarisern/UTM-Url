@@ -47,7 +47,7 @@ FlowRouter.route('/app', {
 });
 
 FlowRouter.route('/test', {
-  name: 'App.home',
+  name: 'App.test',
   action() {
     BlazeLayout.render('App_body', {
       main: 'App_test'
