@@ -2,13 +2,19 @@
 
 
       <div class="form-cointainer">
+        <div class="cell Landing-title">{{WebsiteURL}}</div>
         <form class="grid-x info-link-add">
           <input type="text" class="pt-input cell WebsiteURL" value="{{WebsiteURL}}" name="WebsiteURL" required>
           <input type="text" class="pt-input cell" name="Source" placeholder="Campaign Source" >
+          <div class="cell form-label">The referrer: (e.g. google, newsletter)</div>
           <input type="text" class="pt-input cell" name="Medium" placeholder="Campaign Medium" >
+          <div class="cell form-label">Marketing medium: (e.g. cpc, banner, email)</div>
           <input type="text" class="pt-input cell" name="Name" placeholder="Campaign Name" >
+          <div class="cell form-label">Promo code, or slogan (e.g. spring_sale)</div>
           <input type="text" class="pt-input cell" name="Term" placeholder="Campaign Term" >
+          <div class="cell form-label">Identify the paid keywords</div>
           <input type="text" class="pt-input cell" name="Content" placeholder="Campaign Content" >
+          <div class="cell form-label">Use to differentiate ads</div>
           <button type="button" name="" class="pt-button pt-minimal pt-intent-danger Cancel-form-button cell small-4" value="">Cancel</button>
           <div class="cell small-4"></div>
           <button type="submit" name="submit" class="pt-button pt-intent-primary cell small-4" value="">New URL</button>

@@ -40,12 +40,12 @@ body {
   color: white;
   font-size: 26px;
   font-weight: 600;
-  margin-top: -39px;
+  margin-top: -213px;
   margin-bottom: 40px;
 }
 
 .Landing-lists {
-  margin-left: 500px;
+  margin-left: 510px;
   width: 1800px;
 }
 
@@ -113,6 +113,14 @@ body {
   visibility: visible;
 }
 
+#new-landing-form {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  background-color: #293742;
+  border: none;
+}
+
 /*Form:*/
 
 .form-cointainer {
@@ -127,4 +135,24 @@ body {
 .info-link-add :first-child {
   display: none;
 
+}
+
+.info-link-add .pt-input {
+  margin-bottom: 0px !important;
+}
+
+.Landing-title {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  color: #8A9BA8;
+  font-size: 12px;
+  padding-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 1rem;
 }
