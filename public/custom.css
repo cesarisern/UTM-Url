@@ -61,6 +61,12 @@ body {
 
 .New-URL-Button {
   margin-bottom: 40px;
+  float: left;
+}
+
+.Delete-list-Button {
+  margin-left: 10px;
+
 }
 
 .custom-column {
@@ -81,7 +87,7 @@ body {
 }
 
 .UTM-Links {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #CED9E0;
 }
 
@@ -106,12 +112,16 @@ body {
 .Click-copy {
   font-size: 11px;
   margin-top: 5px;
+  margin-left: 5px;
+  float: left;
 
 }
 
-.Click-copy:hover {
-  color: #D1F26D;
-  visibility: visible;
+.Delete-link {
+  font-size: 11px;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: right;
 }
 
 #new-landing-form {

@@ -3,6 +3,7 @@
     <div class="Column-header">
       <div class="Landing-URL">{{Landingpath}}</div>
       <button class="pt-button New-URL-Button" >New URL</button>
+      <button class="pt-button pt-minimal pt-intent-danger Delete-list-Button" >Delete list</button>
     </div>
 
     <div class="List-container">
@@ -14,6 +15,7 @@
           <div class="cell small-4 UTM-Links" >
             <div class="UTM-Link" data-clipboard-text="{{UTMUrl}}" onclick="" value="{{UTMUrl}}" dir="auto">{{UTMUrldisplay}}</div>
             <div class="Click-copy" >Clcik to copy</div>
+            <div class="Delete-link" >Delete link</div>
           </div>
         {{/each}}
       </div>
