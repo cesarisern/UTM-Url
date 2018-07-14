@@ -8,7 +8,7 @@ import '../../ui/pages/home/home.js';
 import '../../ui/pages/component-test/home.js';
 import '../../ui/pages/not-found/not-found.js';
 
-//Login callbacks
+// Login callbacks
 Accounts.onLogin(function() {
   FlowRouter.go('App.home')
 });
