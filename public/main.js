@@ -3,24 +3,29 @@ $(document).ready(function(){
   Itshere();
   function Itshere() {
    if (!$("#login-name-link").size()) {
-     console.log("Function says the element is NOT rendered");
      window.requestAnimationFrame(Itshere);
    }else {
-      console.log("Function says the element is rendered");
-      $("#login-name-link").addClass("pt-button pt-intent-primary");
+      $("#login-name-link").addClass("pt-button pt-intent-primary pt-minimal");
+      $("#login-name-link").css({"text-decoration":"none"});
+      $(".login-buttons-dropdown-align-").css({"margin-top":"20px","margin-left":"20px"});
       $("#login-name-link").click(function () {
           Itshere2();
       }
       );
       function Itshere2() {
         if (!$("#login-buttons-open-change-password").size()) {
-        console.log("Function says the element 2 is NOT rendered");
         window.requestAnimationFrame(Itshere2);
       } else {
         console.log("Function says the element 2 IS rendered");
-        $(".login-link-and-dropdown-list .login-close-text").addClass("pt-button pt-intent-primary");
-        $(".login-link-and-dropdown-list .login-button").addClass("pt-button pt-intent-primary");
+        $(".login-link-and-dropdown-list .login-close-text").addClass("pt-button pt-intent-primary pt-minimal");
+        $(".login-link-and-dropdown-list .login-close-text").css({"text-decoration":"none","font-size":"14px"});
+        $(".login-link-and-dropdown-list .login-button").addClass("pt-button pt-intent-primary pt-minimal");
+        $(".login-link-and-dropdown-list .login-button").css({"float":"left"});
         $(".login-link-and-dropdown-list .login-button").removeClass("login-button");
+        $("#login-name-link").removeClass("pt-intent-primary");
+        $("#login-name-link").attr("disabled", "disabled");
+        $(".login-link-and-dropdown-list #login-dropdown-list").css({"margin-top":"0px","background":"none","border":"none","box-shadow":"none","position":"relative"});
+        $("#login-buttons-open-change-password").css({"margin-right":"30px"});
       };
     }
     }
