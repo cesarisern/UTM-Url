@@ -18,13 +18,13 @@ $(document).ready(function(){
       } else {
         console.log("Function says the element 2 IS rendered");
         $(".login-link-and-dropdown-list .login-close-text").addClass("pt-button pt-intent-primary pt-minimal");
-        $(".login-link-and-dropdown-list .login-close-text").css({"text-decoration":"none","font-size":"14px"});
+        $(".login-link-and-dropdown-list .login-close-text").css({"text-decoration":"none","font-size":"14px","top":"98px"});
         $(".login-link-and-dropdown-list .login-button").addClass("pt-button pt-intent-primary pt-minimal");
-        $(".login-link-and-dropdown-list .login-button").css({"float":"left"});
         $(".login-link-and-dropdown-list .login-button").removeClass("login-button");
         $("#login-name-link").removeClass("pt-intent-primary");
-        $("#login-name-link").attr("disabled", "disabled");
-        $(".login-link-and-dropdown-list #login-dropdown-list").css({"margin-top":"0px","background":"none","border":"none","box-shadow":"none","position":"relative"});
+        $("#login-name-link").attr(":disabled");
+        $("#login-name-link").css({"color":"rgba(191,204,214,.5)"});
+        $(".login-link-and-dropdown-list #login-dropdown-list").css({"margin-top":"-30px","background":"none","border":"none","box-shadow":"none","position":"relative"});
         $("#login-buttons-open-change-password").css({"margin-right":"30px"});
       };
     }
